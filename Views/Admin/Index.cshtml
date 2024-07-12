@@ -1,0 +1,28 @@
+﻿@model IEnumerable<UserCVuploader.Models.UserProfile>
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h2>Admin Dashboard</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Username</th>
+            <th>CV</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var userProfile in Model)
+        {
+            <tr>
+                <td>@userProfile.UserId</td>
+                <td>@userProfile.User.UserName</td>
+                <td>
+                    <a href="/uploads/@userProfile.CVFilePath" target="_blank">View CV</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

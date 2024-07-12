@@ -1,0 +1,8 @@
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.csproj.AssemblyReference.cache
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.AssemblyInfoInputs.cache
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.AssemblyInfo.cs
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.csproj.CoreCompileInputs.cache
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.RazorAssemblyInfo.cache
+C:\Users\Sekwayo_Tebogo_Isaac\source\repos\UserCVuploader\obj\Debug\net5.0\UserCVuploader.RazorAssemblyInfo.cs
