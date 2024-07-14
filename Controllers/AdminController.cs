@@ -21,8 +21,8 @@ namespace UserCVuploader.Controllers
 
         public IActionResult Index()
         {
-            var userProfiles = _context.UserProfiles.ToList();
-            return View(userProfiles);
+            var cv = _context.CVs.ToList();
+            return View(cv);
         }
     }
 }

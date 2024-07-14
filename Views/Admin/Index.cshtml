@@ -1,28 +1,29 @@
-﻿@model IEnumerable<UserCVuploader.Models.UserProfile>
+﻿@model CVUploader.ViewModels.AdminViewModel
 
-@{
-    ViewData["Title"] = "Admin Dashboard";
-}
-
-<h2>Admin Dashboard</h2>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>User ID</th>
-            <th>Username</th>
-            <th>CV</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var userProfile in Model)
-        {
+<div>
+    <h2>All Users</h2>
+    <table class="table">
+        <thead>
             <tr>
-                <td>@userProfile.UserId</td>
-                <td>@userProfile.User.UserName</td>
-                <td>
-                    <a href="/uploads/@userProfile.CVFilePath" target="_blank">View CV</a>
-                </td>
+                <th>Username</th>
+                <th>CV</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                var cv = Model.CVs.FirstOrDefault(c => c.UserId == user.Id);
+<tr>
+    <td>@user.UserName</td>
+    <td>
+        @if (cv != null)
+        {
+<a href="@Url.Action("DownloadCV", new { id = cv.Id })">Download CV</a> }
+                else
+                {
+<span>No CV uploaded</span>}
+    </td>
+</tr>            }
+        </tbody>
+    </table>
+</div>

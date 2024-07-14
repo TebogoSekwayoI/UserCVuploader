@@ -16,6 +16,10 @@ namespace UserCVuploader.Data
         {
         }
 
-        public DbSet<CV> UserProfiles { get; set; }
+        protected ApplicationDbContext()
+        {
+        }
+
+        public DbSet<CV>CVs{ get; set; }
     }
 }
